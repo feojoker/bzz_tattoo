@@ -9,7 +9,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,8 +19,9 @@
             <div class="container">
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:375295643810">+375 (29) 564 38 10</a>
-                    <a class="header__email" href="#">bzz.tattoo@gmail.com</a>
-                    <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Запись на консультацию</a>
+                    <a class="header__email" href="#">iambzz.tattoo@gmail.com</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Запись на
+                        консультацию</a>
                 </div>
             </div>
         </div>
@@ -27,8 +29,7 @@
             <div class="container">
                 <div class="header__content-inner">
                     <a class="main-header-logo" href="index.html">
-                        <img src="img/logo.png" width="150" height="150"
-                            alt="Лого">
+                        <img src="img/logo.png" width="150" height="150" alt="Лого">
                     </a>
                     <div class="main-navigation-wrapper">
                         <ul class="site-navigation">
@@ -53,9 +54,68 @@
             </div>
         </nav>
     </header>
-    <main class="container">
-        <h1></h1>
-    </main>
+    <section class="about">
+        <div class="container">
+            <div class="about__top">
+                <div class="about__title-box">
+                    <div class="about__title">
+                        Почему именно Bzz.tattoo?
+                    </div>
+                    <div class="about__text">
+                        Строгая специализация на engraving tattoo позволяет выполнять самые
+                        технически сложные проекты с использованием линий на высочайшем уровне.
+                    </div>
+                </div>
+                <div class="about__btn">
+                    <a href=#>
+                        Ознакомится со всем портфолио
+                    </a>
+                </div>
+            </div>
+            <div class="about__items">
+                <div class="about__item">
+                    <img src="img/about-1.png" alt="">
+                    <div class="about__item-title">
+                        Дорого
+                    </div>
+                    <div class="about__item-text">
+                        Качественная татуировка по индивидуальному экскизу,
+                        выполненная опытным мастером с помощью профессионального оборудования
+                        — по определению не дешёвое удовольствие. К тому же, разве цена не дает определенный статус?
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img src="img/about-2.png" alt="">
+                    <div class="about__item-title">
+                        Больно
+                    </div>
+                    <div class="about__item-text">
+                        Кстати об удовольствии: сделать тату, это не в спа отдохнуть.
+                        Конечно, в bzz.tattoo не пыточная — для клиентов с низким болевым порогом всегда
+                        есть крем-анестетик. ......
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img src="img/about-3.png" alt="">
+                    <div class="about__item-title">
+                        Комфортно
+                    </div>
+                    <div class="about__item-text">
+                        Вина мы тебе конечно не предложим, но на домашнюю атмосферу,
+                        уютный место для ожидания, чай и интересные книжки ты определённо можешь рассчитывать.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal">
+        <h2>Hello!</h2>
+        <p>You are awesome!</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
