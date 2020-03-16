@@ -1,17 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffffff;
-  text-transform: uppercase;
 
   background-color: #f0e2e2;
   background-image: url("/Users/Feojoker/Documents/bzz_tattoo/img/Piranesi.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header__top {
+  background-color: #303030;
+}
+
+.header__btn {
+  float: right;
+  line-height: 36px;
+  color: #1b1b1b;
+  background-color: #ffc222;
+  padding: 5px 20px 4px 50px;
+  font-size: 16px;
+  display: block;
+  position: relative;
+}
+
+.header__btn:before {
+  content: "\f0b1";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 22px;
+  color: #1b1b1b;
+}
+
+.header__contacts:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header__phone,
+.header__email {
+  color: #cbcacb;
+  letter-spacing: 0.25px;
+  line-height: 45px;
+  position: relative;
+}
+
+.header__phone {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.header__phone:before {
+  content: "\f095";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+
+.header__email {
+  padding-left: 24px;
+}
+
+.header__email:before {
+  content: "\f003";
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+
+.main-navigation {
+  padding: 34px 0px 23px;
+  text-transform: uppercase;
+}
+
+.header__content-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation li {
+  display: inline-block;
+}
+
+.site-navigation a {
+  color: aliceblue;
+  font-size: 15px;
+  transition: all .3s;
+}
+
+.site-navigation a:hover {
+  color: darkgoldenrod;
+}
+
+.site-navigation li+li {
+  padding-left: 10px;
 }
