@@ -20,22 +20,12 @@ li {
   padding: 0 15px;
 }
 
-
 body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  font-weight: 900;
-  color: #ffffff;
-
-  background-color: #f0e2e2;
-  background-image: url("/Users/Feojoker/Documents/bzz_tattoo/img/Piranesi.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  line-height: 18px;
+  color: #5e5e5e;
 }
 
 header {
@@ -107,6 +97,16 @@ header {
 .main-navigation {
   padding: 34px 0px 23px;
   text-transform: uppercase;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 900;
+  background-color: #f0e2e2;
+  background-image: url("../img/fon.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 600px;
 }
 
 .header__content-inner {
@@ -119,7 +119,7 @@ header {
 }
 
 .site-navigation a {
-  color: aliceblue;
+  color: rgb(10, 10, 10);
   font-size: 15px;
   transition: all .3s;
 }
@@ -130,4 +130,83 @@ header {
 
 .site-navigation li+li {
   padding-left: 10px;
+}
+
+#modal {
+  display: none;
+}
+
+.about {
+  padding: 50px 0px 30px;
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.about__title-box {
+  max-width: 700px;
+  padding-left: 140px;
+  position: relative;
+}
+
+.about__title-box:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: darkgoldenrod;
+  left: 0;
+  top: 11px;
+}
+
+.about__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #0c0c0c;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.about__text {
+  letter-spacing: 0.1px;
+}
+
+.about__btn a {
+  color: #373636;
+  line-height: 24px;
+  padding: 5px 38px;
+  border: 3px solid #e6e6e6;
+}
+
+.about__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item {
+  max-width: 360px;
+  text-align: center;
+  padding: 30px 0px 80px;
+  position: relative;
+  min-height: 375px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+}
+
+.about__item-title {
+  color: #212020;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  padding: 24px 0px;
+}
+
+.about__item-text {
+  letter-spacing: 0.1px;
+  padding: 0px 30px 30px;
 }
