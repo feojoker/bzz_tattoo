@@ -94,7 +94,7 @@ header {
   color: #ffc222;
 }
 
-.main-navigation {
+.main__navigation {
   padding: 34px 0px 23px;
   text-transform: uppercase;
   font-family: "Roboto", Arial, sans-serif;
@@ -114,21 +114,21 @@ header {
   justify-content: space-between;
 }
 
-.site-navigation li {
+.site__navigation li {
   display: inline-block;
 }
 
-.site-navigation a {
+.site__navigation a {
   color: rgb(10, 10, 10);
   font-size: 15px;
   transition: all .3s;
 }
 
-.site-navigation a:hover {
+.site__navigation a:hover {
   color: darkgoldenrod;
 }
 
-.site-navigation li+li {
+.site__navigation li+li {
   padding-left: 10px;
 }
 
@@ -241,4 +241,9 @@ header {
   padding: 8px 0px;
   font-weight: 400;
   font-family: 'Roboto', Arial, sans-seri f;
+}
+
+.navigation__btn {
+  display: none;
+  font-size: 28px;
 }
