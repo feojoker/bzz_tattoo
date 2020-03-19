@@ -104,9 +104,9 @@ header {
   background-color: #f0e2e2;
   background-image: url("../img/fon.png");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .header__content-inner {
@@ -240,7 +240,7 @@ header {
   line-height: 24px;
   padding: 8px 0px;
   font-weight: 400;
-  font-family: 'Roboto', Arial, sans-seri f;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 .navigation__btn {
