@@ -9,6 +9,20 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon2.eot?jilhky');
+  src:  url('../fonts/icomoon2.eot?jilhky#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon2.ttf?jilhky') format('truetype'),
+    url('../fonts/icomoon2.woff?jilhky') format('woff'),
+    url('../fonts/icomoon2.svg?jilhky#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -56,4 +70,58 @@
 }
 .icon-quote-right:before {
   content: "\f10e";
+}
+
+
+
+.icon-lightbulb:before {
+  content: "\e900";
+}
+.icon-folder-stroke:before {
+  content: "\e901";
+}
+.icon-left-quote:before {
+  content: "\e902";
+}
+.icon-right-quote:before {
+  content: "\e903";
+}
+.icon-home1:before {
+  content: "\e904";
+}
+.icon-home:before {
+  content: "\e905";
+}
+.icon-quill:before {
+  content: "\e907";
+}
+.icon-droplet:before {
+  content: "\e90b";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-aid-kit:before {
+  content: "\e998";
+}
+.icon-box-filled:before {
+  content: "\e906";
+}
+.icon-raindrop:before {
+  content: "\e908";
+}
+.icon-raindrop1:before {
+  content: "\e909";
+}
+.icon-bulb:before {
+  content: "\e90a";
+}
+.icon-lab:before {
+  content: "\e90c";
+}
+.icon-shopping-cart:before {
+  content: "\e90d";
 }
