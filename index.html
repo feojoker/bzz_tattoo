@@ -9,10 +9,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    
+
 </head>
 
 <body>
@@ -31,13 +32,67 @@
             <div class="container">
                 <div class="header__content-inner">
                     <a class="main__header-logo" href="index.html">
-                        <img src="img/logo.png" width="150" height="150" alt="Лого">
+                        <img src="img/logo.png" width="300" height="300" alt="Лого">
                     </a>
                     <div class="main__navigation-wrapper">
                         <div class="navigation__btn">
                             <span class="icon-bars"></span>
                         </div>
-                        <ul class="site__navigation">
+                        <div class='nav'>
+                            <div class='link'>
+                                <a href="index.html">
+                                    <div class='prev main'></div>
+                                    <div class='small main'></div>
+                                    <div class='full'>
+                                        <div class='f1'>
+                                            <p>Главная</p>
+                                        </div>
+                                        <div class='f2'>some additional info to this link</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='link'>
+                                <a href="index.html">
+                                    <div class='prev filosofy'></div>
+                                    <div class='small filosofy'></div>
+                                    <div class='full'>
+                                        <div class='f1'>Философия</div>
+                                        <div class='f2'>some additional info to this link</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='link'>
+                                <a href="index.html">
+                                    <div class='prev portfolio'></div>
+                                    <div class='small portfolio'></div>
+                                    <div class='full'>
+                                        <div class='f1'>Портфолио</div>
+                                        <div class='f2'>some additional info to this link</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='link'>
+                                <a href="index.html">
+                                    <div class='prev care'></div>
+                                    <div class='small care'></div>
+                                    <div class='full'>
+                                        <div class='f1'>Уход</div>
+                                        <div class='f2'>some additional info to this link</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='link'>
+                                <a href="index.html">
+                                    <div class='prev shop'></div>
+                                    <div class='small shop'></div>
+                                    <div class='full'>
+                                        <div class='f1'>Магазин</div>
+                                        <div class='f2'>some additional info to this link</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <ul class="site__navigation">
                             <li class="site__navigation-current">
                                 <a href="index.html">Главная</a>
                             </li>
@@ -53,7 +108,7 @@
                             <li>
                                 <a href="shop.html">Магазин</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -72,14 +127,14 @@
                     </div>
                 </div>
                 <div class="about__btn">
-                    <a href="https://www.instagram.com/bzz.tattoo">
+                    <a href="https://www.instagram.com/bzz.tattoo" target="blank">
                         Ознакомится со всем портфолио
                     </a>
                 </div>
             </div>
             <div class="about__items">
                 <div class="about__item">
-                    <img src="img/about-1.png" alt="">
+                    <img class="centering1" src="img/about-1.png" alt="">
                     <div class="about__item-title">
                         Дорого
                     </div>
@@ -90,14 +145,14 @@
                     </div>
                 </div>
                 <div class="about__item">
-                    <img src="img/about-2.png" alt="">
+                    <img class="centering2" src="img/about-2.png" alt="">
                     <div class="about__item-title">
                         Больно
                     </div>
                     <div class="about__item-text">
                         Кстати об удовольствии: сделать тату, это не в спа отдохнуть.
-                        Конечно, в bzz.tattoo не пыточная — для клиентов с низким болевым порогом всегда
-                        есть крем-анестетик. ......
+                        Конечно, в Bzz Tattoo не пыточная — для клиентов с низким болевым порогом всегда
+                        есть успокаивающий голос мастера, ну и в крайнем случае — обезбаливающий крем-анестетик.
                     </div>
                 </div>
                 <div class="about__item">
@@ -107,16 +162,43 @@
                     </div>
                     <div class="about__item-text">
                         Вина мы тебе конечно не предложим, но на домашнюю атмосферу,
-                        уютный место для ожидания, чай и интересные книжки ты определённо можешь рассчитывать.
+                        уютное место для ожидания, чай и интересные книжки ты определённо можешь рассчитывать.
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="footer">
+    <section class="about">
+        <div class="container">
+            <div class="about__top">
+                <div class="about__title-box">
+                    <div class="about__title">
+                        Как до нас добраться:
+                    </div>
+                    <div class="about__text">
+                        Наша уютная домашняя тату-студия расположена по адресу: <br>
+                        г. Минск, ул. Строителей д. 14 кв. 88. <br>
+                        Чтобы посмотреть как к нам добраться на карте, жмякай на кнопку справа.
+                    </div>
+                </div>
+                <div class="about__btn">
+                    <button class="map__btn">
+                        Bzz Tattoo на карте
+                    </button>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="container map" tabindex="-1">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab872869b515410b71147dfc4e1f5bc7d93fbe65cdcadd61195ddd602e6a969f8&amp;source=constructor"
+                width="1170" height="602" frameborder="0"></iframe>
+        </div>
+    </section>
+    <div class="footer" id="last">
         <div class="container">
             @ 2020 First site by Fedor Sokolov.
-            <a href="https://github.com/feojoker/bzz_tattoo" class="href">
+            <a href="https://github.com/feojoker/bzz_tattoo">
                 Project on GitHub
             </a>
         </div>
