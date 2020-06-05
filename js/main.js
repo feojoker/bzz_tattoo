@@ -1,26 +1,46 @@
-$(function () {
-    $('.navigation__btn').on('click', function () {
-        $('.site__navigation').slideToggle();
-    });
+const buttonClient = document.querySelector(".navigation__btn"),
+    modalClient = document.querySelector(".site__navigation"),
+    buttonMap = document.querySelector(".map__btn"),
+    map = document.querySelector(".map"),
+    footer = document.getElementById("last"),
+    logo = document.querySelector(".logo-mob"),
+    menuPlace = document.getElementById("no-flex");
 
-});
 
-const buttonMap = document.querySelector(".map__btn");
-const map = document.querySelector(".map");
-const footer = document.getElementById("last");
+const menuBtn = document.getElementById('menuBtn'),
+    menuContainer = document.getElementById('menuContainer');
 
-// function toggleModal() {
-//     map.classList.toggle("is__open");
-//     setTimeout(scroll, 100);
-//     footer.scrollIntoView();
+
+function client (event) {
+    event.preventDefault();
+    logo.classList.toggle("hide__logo");
+    menuBtn.classList.toggle("opened");
+    menuContainer.classList.toggle("opened");
+    menuPlace.classList.toggle("no__flex");
+};
+
+
+
+// menuBtn.onclick = function () {
+//     if (menuBtn.className == menuIconClosed) {
+//         menuBtn.className = menuIconOpened;
+//         menuContainer.className = menuContOpened;
+//     } else if (menuBtn.className == menuIconOpened) {
+//         menuBtn.className = menuIconClosed;
+//         menuContainer.className = menuContClosed;
+//     }
 // }
 
-// buttonMap.addEventListener("click", toggleModal);
+
+
+
+
+
+
 
 function anim() {
     footer.scrollIntoView(false);
     map.removeEventListener('transitionend', anim);
-    console.log("dsad");
 }
 
 
@@ -32,6 +52,8 @@ function scroll() {
 
 
 buttonMap.addEventListener("click", scroll);
+
+menuBtn.addEventListener("click", client);
 
 
 

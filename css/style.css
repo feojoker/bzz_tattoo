@@ -46,6 +46,18 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
+
+.main-header {
+  display: block;
+}
+
+.main-header-mob {
+  display: none;
+}
+
+
+
+
 .header__top {
   background-color: #303030;
 }
@@ -126,6 +138,130 @@ header {
 .header__content-inner {
   display: flex;
   justify-content: space-between;
+}
+
+/* !for mobile devices */
+
+.main-header-mob {
+  display: none;
+}
+
+.main__navigation-mob {
+  padding: 15px 0px 23px;
+  text-transform: uppercase;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 900;
+  background-color: #f0e2e2;
+  background-image: url("../img/fon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+.no__flex {
+  display: block;
+}
+
+
+.menu-icon {
+  display: block;
+	font-size: 0;
+	background: none;
+	border: none;
+	width: 30px;
+	height: 25px;
+	position: absolute;
+  cursor: pointer;
+  right: 50px;
+}
+
+.menu-icon,
+.menu-icon:before,
+.menu-icon:after {
+  border-top: 5px solid #ffc222;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+	position: absolute;
+	content: "";
+	display: block;
+	left: 0;
+	right: 0;
+}
+
+.menu-icon:before {
+	top: 6px;
+}
+
+.menu-icon:after {
+	top: 17px;
+}
+
+.menu-icon.opened {
+	border-top-color: transparent;
+}
+
+.menu-icon.opened:after {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 12px;
+}
+
+.menu-icon.opened:before {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 12px;
+}
+
+/*styles for menu container*/
+.menu-container {
+  padding-top: 20px;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-container li {
+  margin-bottom: 5px;
+}
+
+.menu-container a {
+  display: block;
+  padding: 10px 0;
+  color: #fff;
+  background: #ccc;
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif, arial;
+}
+
+.menu-container {
+  display: none;
+}
+
+.menu-container.opened {
+  display: block;
+  margin-top: 10px;
+}
+
+.site__navigation {
+  
+}
+
+.hide__logo {
+  display: none;
 }
 
 .site__navigation li {
@@ -294,6 +430,8 @@ header {
 .navigation__btn {
   display: none;
   font-size: 28px;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 
 
@@ -430,8 +568,6 @@ body {
   margin-left: 0px;
   color: #ffc222;
 }
-
-
 
 .nav .link:hover .prev {
   opacity: 0;
