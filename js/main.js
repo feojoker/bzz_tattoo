@@ -1,72 +1,59 @@
-const buttonClient = document.querySelector(".navigation__btn"),
-    modalClient = document.querySelector(".site__navigation"),
+const
     buttonMap = document.querySelector(".map__btn"),
     map = document.querySelector(".map"),
     footer = document.getElementById("last"),
     logo = document.querySelector(".logo-mob"),
-    menuPlace = document.getElementById("no-flex");
+    menuPlace = document.getElementById("no-flex"),
+    modalClient = document.getElementById("modal"),
+    buttonClient = document.querySelectorAll(".client-btn"),
+    buttonClientClose = document.querySelector(".w3-button");
 
 
-const menuBtn = document.getElementById('menuBtn'),
+// for mobile menu
+const buttonMenu = document.getElementById('menuBtn'),
     menuContainer = document.getElementById('menuContainer');
 
 
-function client (event) {
+function menu(event) {
     event.preventDefault();
     logo.classList.toggle("hide__logo");
-    menuBtn.classList.toggle("opened");
+    buttonMenu.classList.toggle("opened");
     menuContainer.classList.toggle("opened");
     menuPlace.classList.toggle("no__flex");
 };
 
+function client(event) {
+    event.preventDefault();
+    modalClient.classList.toggle("opened");
+};
 
 
-// menuBtn.onclick = function () {
-//     if (menuBtn.className == menuIconClosed) {
-//         menuBtn.className = menuIconOpened;
-//         menuContainer.className = menuContOpened;
-//     } else if (menuBtn.className == menuIconOpened) {
-//         menuBtn.className = menuIconClosed;
-//         menuContainer.className = menuContClosed;
-//     }
-// }
-
-
-
-
-
-
-
+window.onclick = function (event) {
+    if (event.target == modalClient) {
+        modalClient.classList.toggle("opened");
+    }
+};
 
 function anim() {
     footer.scrollIntoView(false);
     map.removeEventListener('transitionend', anim);
 }
 
-
-
 function scroll() {
     map.addEventListener('transitionend', anim);
     map.classList.toggle("is__open");
 }
 
-
 buttonMap.addEventListener("click", scroll);
 
-menuBtn.addEventListener("click", client);
+buttonMenu.addEventListener("click", menu);
+
+buttonClientClose.addEventListener("click", client);
+
+for (const button of buttonClient) {
+    button.addEventListener('click', client);
+  }
 
 
 
 
-// async function scroll() {
-
-//     let promise = new Promise((resolve, reject) => {
-//         setTimeout(() => resolve("готово!"), 1000)
-//     });
-
-//     let result = await promise; // будет ждать, пока промис не выполнится (*)
-
-//     alert(result); // "готово!"
-// }
-
-// f();

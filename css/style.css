@@ -167,12 +167,12 @@ header {
 
 .menu-icon {
   display: block;
-	font-size: 0;
-	background: none;
-	border: none;
-	width: 30px;
-	height: 25px;
-	position: absolute;
+  font-size: 0;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 25px;
+  position: absolute;
   cursor: pointer;
   right: 50px;
 }
@@ -181,44 +181,44 @@ header {
 .menu-icon:before,
 .menu-icon:after {
   border-top: 5px solid #ffc222;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
 }
 
 .menu-icon:before,
 .menu-icon:after {
-	position: absolute;
-	content: "";
-	display: block;
-	left: 0;
-	right: 0;
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
 }
 
 .menu-icon:before {
-	top: 6px;
+  top: 6px;
 }
 
 .menu-icon:after {
-	top: 17px;
+  top: 17px;
 }
 
 .menu-icon.opened {
-	border-top-color: transparent;
+  border-top-color: transparent;
 }
 
 .menu-icon.opened:after {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
-	top: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 12px;
 }
 
 .menu-icon.opened:before {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	top: 12px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 12px;
 }
 
 /*styles for menu container*/
@@ -276,9 +276,6 @@ header {
   padding-left: 10px;
 }
 
-#modal {
-  display: none;
-}
 
 .about {
   padding: 50px 0px 30px;
@@ -390,9 +387,18 @@ header {
 }
 
 #modal {
-  width: 300px;
-
+  display: none;
 }
+
+#modal.opened {
+  display: inline-block;
+}
+
+#modal.top-modal {
+  background-color: #ffc222;
+  border: none;
+}
+
 
 #modal input {
   display: block;
@@ -409,6 +415,16 @@ header {
 #modal input[type="submit"] {
   background-color: #ffc222;
   border: none;
+}
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
 }
 
 .footer {
@@ -540,6 +556,7 @@ body {
   margin-left: 0px;
   color: #ffc222;
 }
+
 .portfolio:before {
   content: "\e930";
   font-family: "icomoon";
@@ -547,6 +564,7 @@ body {
   margin-left: 0px;
   color: #ffc222;
 }
+
 .care:before {
   content: "\e998";
   font-family: "icomoon";
