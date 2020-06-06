@@ -165,7 +165,6 @@ header {
   display: block;
 }
 
-
 .menu-icon {
   display: block;
 	font-size: 0;
@@ -224,7 +223,7 @@ header {
 
 /*styles for menu container*/
 .menu-container {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .menu-container ul {
@@ -239,12 +238,11 @@ header {
 
 .menu-container a {
   display: block;
-  padding: 10px 0;
+  padding: 5px 0;
   color: #fff;
   background: #ccc;
   text-decoration: none;
   text-align: center;
-  font-family: sans-serif, arial;
 }
 
 .menu-container {
@@ -253,11 +251,7 @@ header {
 
 .menu-container.opened {
   display: block;
-  margin-top: 10px;
-}
-
-.site__navigation {
-  
+  margin-top: 5px;
 }
 
 .hide__logo {
