@@ -7,17 +7,6 @@ const buttonClient = document.querySelector(".navigation__btn"),
     menuPlace = document.getElementById("no-flex");
 
 
-const menuBtn = document.getElementById('menuBtn'),
-    menuContainer = document.getElementById('menuContainer');
-
-
-function client (event) {
-    event.preventDefault();
-    logo.classList.toggle("hide__logo");
-    menuBtn.classList.toggle("opened");
-    menuContainer.classList.toggle("opened");
-    menuPlace.classList.toggle("no__flex");
-};
 
 
 
@@ -32,6 +21,11 @@ function client (event) {
 // }
 
 
+
+$('.navigation__btn').on('click', function () {
+    $('.site__navigation').slideToggle();
+    $('.main__header-logo').slideToggle();
+});
 
 
 
@@ -52,8 +46,6 @@ function scroll() {
 
 
 buttonMap.addEventListener("click", scroll);
-
-menuBtn.addEventListener("click", client);
 
 
 

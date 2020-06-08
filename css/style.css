@@ -258,6 +258,10 @@ header {
   display: none;
 }
 
+.site__navigation {
+  display: none;
+}
+
 .site__navigation li {
   display: inline-block;
 }
