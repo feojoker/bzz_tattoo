@@ -21,7 +21,8 @@
             <div class="container">
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:375295643810">+375 (29) 111 11 11</a>
-                    <a class="header__email" href="#">iambzz.tattoo@gmail.com</a>
+                    <a data-fancybox data-src="#email" href="javascript:;" class="header__email"
+                        href="#">iambzz.tattoo@gmail.com</a>
                     <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Запись на
                         консультацию</a>
                 </div>
@@ -98,7 +99,8 @@
             <div class="container">
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:375295643810">+375 (29) 111 11 11</a>
-                    <a class="header__email" href="#">iambzz.tattoo@gmail.com</a>
+                    <a data-fancybox data-src="#email" href="javascript:;" class="header__email"
+                        href="#">iambzz.tattoo@gmail.com</a>
                     <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Запись на
                         консультацию</a>
                 </div>
@@ -138,6 +140,11 @@
             </div>
         </nav>
     </header>
+    <section class="instagram">
+    <div class="container">
+        <div id="instafeed"></div>
+    </div>
+    </section>
     <section class="about">
         <div class="container">
             <div class="about__top">
@@ -158,7 +165,7 @@
             </div>
             <div class="about__items">
                 <div class="about__item">
-                    <img class="centering1" src="img/about-1.png" alt="">
+                    <img class="centering1" src="img/about-1.png" alt="">\
                     <div class="about__item-title">
                         Дорого
                     </div>
@@ -206,12 +213,18 @@
                     </div>
                 </div>
                 <div class="about__btn">
-                    <button class="map__btn">
+                    <a data-fancybox data-type="iframe"
+                        data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab872869b515410b71147dfc4e1f5bc7d93fbe65cdcadd61195ddd602e6a969f8&amp;source=constructor"
+                        href="javascript:;">
+                        Bzz Tattoo на карте (fancybox)
+                    </a>
+                    <!-- <button class="map__btn">
                         Bzz Tattoo на карте
-                    </button>
+                    </button> -->
                 </div>
             </div>
     </section>
+
     <section>
         <div class="container map" tabindex="-1">
             <iframe
@@ -228,6 +241,17 @@
         </div>
     </div>
 
+
+
+    <div id="email">
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш email">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+
     <div id="modal">
         <form>
             <input type="text" placeholder="Ваше имя">
@@ -237,6 +261,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.instagramFeed.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

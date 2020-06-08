@@ -6,59 +6,42 @@ const buttonClient = document.querySelector(".navigation__btn"),
     logo = document.querySelector(".logo-mob"),
     menuPlace = document.getElementById("no-flex");
 
+    (function ($) {
+        $(window).on('load', function () {
+            $.instagramFeed({
+                'username': 'bzz.tattoo', //Имя пользователя
+                'container': "#instafeed", //Контейнер для изображений
+                'display_profile': false, //Отображение профиля
+                'display_biography': false, //Отображение биографии
+                'display_gallery': true, //Отображение галереи
+                'styling': false, //Стандартные стили библиотеки
+                'items': 6, //Количество изображений в галереи
+                'items_per_row': 3, //Количество изображений в ряд
+                'margin': 1, //Отступ между изображениями
+                'image_size': 320
+            });
+        });
+    })(jQuery);
+
+$(document).ready(function () {
+
+            $('.navigation__btn').on('click', function () {
+                $('.site__navigation').slideToggle();
+                $('.main__header-logo').slideToggle();
+            });
+
+
+            function anim() {
+                footer.scrollIntoView(false);
+                map.removeEventListener('transitionend', anim);
+            }
 
 
 
+            function scroll() {
+                map.addEventListener('transitionend', anim);
+                map.classList.toggle("is__open");
+            }
+            //buttonMap.addEventListener("click", scroll);
 
-// menuBtn.onclick = function () {
-//     if (menuBtn.className == menuIconClosed) {
-//         menuBtn.className = menuIconOpened;
-//         menuContainer.className = menuContOpened;
-//     } else if (menuBtn.className == menuIconOpened) {
-//         menuBtn.className = menuIconClosed;
-//         menuContainer.className = menuContClosed;
-//     }
-// }
-
-
-
-$('.navigation__btn').on('click', function () {
-    $('.site__navigation').slideToggle();
-    $('.main__header-logo').slideToggle();
-});
-
-
-
-
-
-
-function anim() {
-    footer.scrollIntoView(false);
-    map.removeEventListener('transitionend', anim);
-}
-
-
-
-function scroll() {
-    map.addEventListener('transitionend', anim);
-    map.classList.toggle("is__open");
-}
-
-
-buttonMap.addEventListener("click", scroll);
-
-
-
-
-// async function scroll() {
-
-//     let promise = new Promise((resolve, reject) => {
-//         setTimeout(() => resolve("готово!"), 1000)
-//     });
-
-//     let result = await promise; // будет ждать, пока промис не выполнится (*)
-
-//     alert(result); // "готово!"
-// }
-
-// f();
+        });
