@@ -9,10 +9,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
@@ -23,7 +22,7 @@
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:375295643810">+375 (29) 111 11 11</a>
                     <a class="header__email" href="#">iambzz.tattoo@gmail.com</a>
-                    <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Запись на
+                    <a class="client-btn header__btn">Запись на
                         консультацию</a>
                 </div>
             </div>
@@ -35,9 +34,6 @@
                         <img src="img/logo.png" width="300" height="300" alt="Лого">
                     </a>
                     <div class="main__navigation-wrapper">
-                        <div class="navigation__btn">
-                            <span class="icon-bars"></span>
-                        </div>
                         <div class='nav'>
                             <div class='link'>
                                 <a href="index.html">
@@ -92,28 +88,61 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- <ul class="site__navigation">
-                            <li class="site__navigation-current">
-                                <a href="index.html">Главная</a>
-                            </li>
-                            <li>
-                                <a href="filosofy.html">Философия</a>
-                            </li>
-                            <li>
-                                <a href="work.html">Портфолио</a>
-                            </li>
-                            <li>
-                                <a href="aftercare.html">Уход</a>
-                            </li>
-                            <li>
-                                <a href="shop.html">Магазин</a>
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+    <header class="main-header-mob">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__contacts">
+                    <a class="header__phone" href="tel:375295643810">+375 (29) 111 11 11</a>
+                    <a class="header__email" href="#">iambzz.tattoo@gmail.com</a>
+                    <a class="client-btn header__btn">Запись на
+                        консультацию</a>
+                </div>
+            </div>
+        </div>
+        <nav class="main__navigation-mob">
+            <div class="container">
+                <div class="header__content-inner" id="no-flex">
+                    <a class="main__header-logo logo-mob" href="index.html">
+                        <img src="img/logo.png" width="300" height="300" alt="Лого">
+                    </a>
+                    <div class="main__navigation-wrapper">
+                        <div class="navigation__btn">
+                            <span class="menu-icon" id="menuBtn">></span>
+                        </div>
+                        <div class="menu-container" id="menuContainer">
+                            <ul class="site__navigation">
+                                <li class="site__navigation-current">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="filosofy.html">Философия</a>
+                                </li>
+                                <li>
+                                    <a href="work.html">Портфолио</a>
+                                </li>
+                                <li>
+                                    <a href="aftercare.html">Уход</a>
+                                </li>
+                                <li>
+                                    <a href="shop.html">Магазин</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <ul class="instagram">
+
+        </ul>
+    </section>
     <section class="about">
         <div class="container">
             <div class="about__top">
@@ -203,16 +232,24 @@
             </a>
         </div>
     </div>
-
-    <div id="modal">
-        <form>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
-            <input type="submit" value="Отправить">
-        </form>
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content w3-container">
+            <div class="w3-container top-modal">
+                <span class="w3-button"><svg
+                        class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                        </svg></span>
+                <h2>Бесплатная консультация</h2>
+            </div>
+            <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
