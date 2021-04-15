@@ -52,8 +52,4 @@ buttonClientClose.addEventListener("click", client);
 
 for (const button of buttonClient) {
     button.addEventListener('click', client);
-  }
-
-
-
-
+}
